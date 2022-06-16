@@ -1,0 +1,51 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+#topbar{
+    height:60px;
+    padding:0;
+    font-size:14px;
+    transition: all 0.5s;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: var(--z-index-topbar);
+    &.topbar-scroll{
+        top:-60px;
+    }
+
+   .contact-info{
+        line-height: 0;
+        color: rgba(255, 255, 255, 0.8);
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+
+        i{
+            color:#f6b024;
+            line-height: 0;
+            margin-right:5px;
+
+            &.phone-icon{
+                margin-left:15px;
+            }
+        }
+   }
+   .cta{
+    background:transparent;
+    
+        a{
+            color:#fff;
+            background:#f6b024;
+            padding:6px 24px 8px 24px;
+            transition: 0.3s;
+            border-radius: 50px;
+
+            &:hover{
+                background:#f1a40a;
+            }
+        }
+    }
+}

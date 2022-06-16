@@ -1,0 +1,31 @@
+#pov-header{
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    z-index: var(--z-index-header);    
+    top:60px;
+    color:var(--bg-color);
+    &.header-scroll{
+        top:0;
+
+        .pov-navbar{
+            background-color: rgb(37, 150, 190, 0.9);
+        }
+    }
+    .logo{
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        a{
+            color:#fff;
+        }
+
+        img{
+            max-height: 40px;
+        }
+    }
+}

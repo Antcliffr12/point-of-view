@@ -1,0 +1,52 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+.hero{
+	background: #0c0c0c;
+	width: 100%;
+	height:80vh;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: relative;
+	margin-bottom:-90px;
+	color: #fff;
+	transition: 0.3s;
+
+	&::before{
+		content: "";
+		background:rgba(37,150,190, 0.5);
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	&-content{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2{
+			font-weight: bold;
+			margin-bottom:30px;
+			font-size:38px;
+			@include media-breakpoint-up(lg){
+				font-size:48px;
+			}
+		}
+		p{
+			width:100%;
+			animation-delay: 0.4s;
+			@include media-breakpoint-up(lg){
+				width: 60%;
+			}
+		}
+	}
+
+
+	
+  
+}
