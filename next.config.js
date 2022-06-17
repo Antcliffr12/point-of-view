@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
 
-module.exports = {
-  assetPrefix: isProd ? '/point-of-view/' : ''
-}
+
 
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: ['media.graphassets.com'],
+  },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },

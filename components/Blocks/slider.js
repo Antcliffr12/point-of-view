@@ -1,6 +1,7 @@
 import react from "react";
 import { Swiper, SwiperSlide, SwiperSlider } from 'swiper/react';
 import 'swiper/css';
+import Image from "next/image";
 
 
 function Slider( { slides } ) {
@@ -30,7 +31,11 @@ function Slider( { slides } ) {
                     <div className="card text-center">
                         <div className="card-body">
                             <span className="card-body-image mb-4">
-                                <img src={cta.icon.url} alt={cta.title} />
+                                <Image 
+                                    src={cta.icon.url} 
+                                    alt={cta.title} 
+                                    layout="fill"
+                                />
                             </span>
                             <h4 className="card-body-title">{cta.title}</h4>
                             <p className="card-text">{cta.excerpt}</p>

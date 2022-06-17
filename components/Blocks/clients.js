@@ -4,6 +4,7 @@ import { Autoplay, Pagination } from 'swiper';
 import {  Swiper, SwiperSlide, SwiperSlider } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Image from "next/image";
 
 function Logo({ ...page }) {
     
@@ -56,7 +57,13 @@ function Logo({ ...page }) {
           <div className="swiper-wrapper align-items-center">
             {page.company.map(client => 
                 <SwiperSlide key={client.name} className="swiper-slide">
-                    <img src={client.logo.url} className="img-fluid" alt={client.company} />
+                    <Image 
+                      src={client.logo.url} 
+                      className="img-fluid" 
+                      alt={client.company} 
+                      layout="fill"
+                      objectFit="contain" 
+                    />
                 </SwiperSlide>
             )}
            </div>

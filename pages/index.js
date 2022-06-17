@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import { gql } from "@apollo/client";
 import { graphcmsClient } from "../lib/client";
 import Layout from "../components/Layout";

@@ -10,9 +10,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-            <title>The Page</title>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         </Head>
         <body>
           <Main />
