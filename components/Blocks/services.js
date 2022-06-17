@@ -3,7 +3,7 @@ import React from 'react'
 function Services( {...page} ) {
   console.log(page)
   return (
-    <section id="services" className='services'>
+    <section id="services" className='services' name="services">
       <div className='container-fluid p-0' data-aos="fade-up">
         <div className='row'>
           {page.services.map( ( service, i) => 
