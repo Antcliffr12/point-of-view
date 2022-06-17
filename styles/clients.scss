@@ -1,0 +1,50 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+
+.clients{
+    overflow: hidden;
+    padding-top:0;
+    @include media-breakpoint-down(lg){
+        margin: 0;
+    }
+
+    &-title{
+        max-width: 800px;
+        h2{
+           margin-bottom:20px;
+        }
+    }
+
+    .swiper-slide{
+        height:auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            opacity: 0.5;
+            transition: 0.3s;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .swiper-pagination{
+        margin-top: 20px;
+        position: relative;
+
+        &-bullet{
+            width:12px;
+            height:12px;
+            background-color: #fff;
+            opacity: 1;
+            border: 1px solid #0880e8;
+            &-active{
+                background:#0880e8;
+            }
+        }
+    }
+}

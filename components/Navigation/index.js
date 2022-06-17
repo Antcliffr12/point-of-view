@@ -22,18 +22,18 @@ function Navigation({ toggleNav }) {
                     <FaBars />
                 </div>
                 <ul className='pov-navbar__menu'>
-                    <li className={router.asPath == "/about" ? "pov-navbar__menu-item active" : "pov-navbar__menu-item"}>
+                    <li className={router.asPath == "#services" ? "pov-navbar__menu-item active" : "pov-navbar__menu-item"}>
                         <Link
-                            href='/about'
+                            href='#about'
                         >
                         About
                         </Link>        
                     </li>
-                    <li className={router.asPath == "/contact" ? "pov-navbar__menu-item active" : "pov-navbar__menu-item"}>
+                    <li className={router.asPath == "#services" ? "pov-navbar__menu-item active" : "pov-navbar__menu-item"}>
                         <Link 
-                            href='/contact'
+                            href='#services'
                         >
-                            Contact
+                            Services
                         </Link>
                     </li>
                 </ul>

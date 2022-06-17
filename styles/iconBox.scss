@@ -1,0 +1,26 @@
+.icon-boxes{
+    position: relative;
+    padding-top:0;
+    .icon-box{
+        padding:40px 30px;
+        position: relative;
+        overflow: hidden;
+        background:#ffffff;
+        box-shadow: 5px 10px 30px 0 rgb(68 88 144 / 20%);
+        transition: all 0.3s ease-in-out;
+        border-radius: 0px;
+
+        .icon{
+            margin:0 auto 20px auto;
+            display:inline-block;
+            text-align: center;
+
+            i{
+                font-size:36px;
+                line-height: 1;
+                color:#a4b5bf;
+            }
+        }
+    }
+    
+}

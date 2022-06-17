@@ -1,0 +1,20 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+.about{
+   position: relative;
+   
+   .section-title{
+        text-align: center;
+        padding-bottom:30px;
+
+        h2{
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom:0;
+        }
+   }
+
+   
+}
