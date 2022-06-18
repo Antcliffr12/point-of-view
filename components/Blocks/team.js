@@ -26,7 +26,7 @@ function Team({ ...page }) {
 								<h4>{person.name}</h4>
 								<span>{person.position}</span>
 								<div className="social">
-									{person.twitter ? <a href={`https://twitter.com/${person.twitter}`} target="_blank"  ><i className="bi bi-twitter"></i></a> : '' }
+									{person.twitter ? <a href={`https://twitter.com/${person.twitter}`} target="_blank"  rel="noreferrer"><i className="bi bi-twitter"></i></a> : '' }
 									{person.facebook ? <a href={`https://facebook.com/${person.facebook}`}  target="_blank" rel="noopener"><i className="bi bi-facebook"></i></a> : '' }
 									{person.linkedin ? <a href={`https://linkedin.com/in/${person.linkedin}`}  target="_blank" rel="noopener"><i className="bi bi-linkedin"></i></a> : '' }
 								</div>
