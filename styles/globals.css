@@ -32,14 +32,24 @@ p{
   --z-index-iconCards:5;
 }
 
-h2{
-  font-size:32px !important;
-  font-weight: 700 !important;
-}
+
 
 section{
   padding: 60px 0;
   overflow: hidden;
+}
+
+.section-title{
+  text-align: center;
+  padding-bottom:30px;
+}
+
+.section-title h2{
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom:20px;
+  padding-bottom:0;
 }
 
 * >  :first-child{

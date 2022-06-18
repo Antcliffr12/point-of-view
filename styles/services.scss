@@ -1,16 +1,21 @@
 .services{
     position: relative;
+    background-color: #406b85;
 
+    .section-title{
+        color:#fff;
+    }
+   
     &-box{
         margin-bottom:20px;
         padding:50px 40px;
-        border-radius: 6px;
+        border-radius: 10px;
         background:#fff;
         box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
 
         i{
             float:left;
-            color:#f6b024;
+            color:#607a85;
             font-size:40px;
             line-height: 0;
         }

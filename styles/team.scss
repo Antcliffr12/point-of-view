@@ -1,0 +1,92 @@
+.team{
+    &-member{
+        position: relative;
+        box-shadow:0px 2px 15px rgb(0 0 0 / 10%);
+        padding:30px;
+        border-radius: 10px;
+        background:#fff;
+
+        .pic{
+            overflow: hidden;
+            width:180px;
+            border-radius: 50%;
+
+            img{
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        &-info{
+            padding-left:30px;
+
+            h4{
+                font-weight: 700;
+                margin-bottom:5px;
+                font-size:20px;
+                color:#406b85;
+            }
+
+            span{
+                display: block;
+                font-size: 15px;
+                padding-bottom: 10px;
+                position: relative;
+                font-weight: 500;
+
+                &::after{
+                    content:'';
+                    position: absolute;
+                    display: block;
+                    width: 50px;
+                    height:1px;
+                    background:#a4b5bf;
+                    bottom:0;
+                    left:0;
+                }
+            }
+
+            p{
+                margin:10px 0 0 0;
+                font-size:14px;
+            }
+
+            .social{
+                margin-top:12px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                a{
+                    transition: ease-in-out 0.3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    width:32px;
+                    height:32px;
+                    background:#ecf6fe;
+                    color: #142f39;
+
+                    i{
+                        font-size:16px;
+                        margin: 0 2px;
+                    }
+
+                    &:not(:first-of-type){
+                        margin-left: 8px;
+                    }
+
+                    &:hover{
+                        background:#406b85;
+                        color:#fff;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}

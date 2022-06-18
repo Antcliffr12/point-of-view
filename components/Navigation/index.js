@@ -45,6 +45,16 @@ function Navigation({ toggleNav }) {
                             Services
                         </Link>
                     </li>
+                    <li className='pov-navbar__menu-item'>
+                        <Link
+                            activeClass="active"
+                            to="team"
+                            spy={true}
+                            offset={-80}
+                        >
+                            Team
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </nav>

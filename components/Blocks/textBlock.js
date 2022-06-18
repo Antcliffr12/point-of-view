@@ -2,7 +2,7 @@
 function TextBlock({ ...page }) {
     
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" name="about">
         <div className="container" data-aos="fade-up">
             <div className="section-title">
                 <h2>{page.textTitle}</h2>
