@@ -11,7 +11,7 @@ function Hero( { ...page } ) {
               <p className="animate__animated animate__fadeInLeft">{page.headline}</p>
               <div className="hero-content__btn animate__animated animate__fadeInLeft">
                   <a href="#" className="hero-btn">
-                      Let's Get to Work
+                      Call to Action
                   </a>
               </div>
             </div>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import TopBar from './TopBar'
 import Navigation from './Navigation'
 
 import TopNavHeaderScroll from '../lib/hooks'
