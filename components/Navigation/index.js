@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-// import Link from 'next/link'
+import Link from 'next/link'
 import { useRouter } from "next/router";
-import { Link } from 'react-scroll'
+// import { Link } from 'react-scroll'
 
 import { FaBars } from 'react-icons/fa'
 
@@ -22,35 +22,23 @@ function Navigation({ toggleNav }) {
                     <FaBars />
                 </div>
                 <ul className='pov-navbar__menu'>
-                    <li className="pov-navbar__menu-item">
+                    <li className={router.asPath == "#about" ? "pov-navbar__menu-item active" : "pov-navbar__menu-item"}>
                         <Link
-                            activeClass="active"
-                            to="about"
-                            spy={true}
-                            offset={-80}
-                            isDynamic={true}
-               
+                            href='#about'
                         >
                         About
-                        </Link>        
+                        </Link>    
                     </li>
-                    <li className="pov-navbar__menu-item">
-                    <Link
-                            activeClass="active"
-                            to="services"
-                            spy={true}
-                            offset={-80}
-                            
+                    <li className={router.asPath == "#services" ? "pov-navbar__menu-item active" : "pov-navbar__menu-item"}>
+                        <Link 
+                            href='#services'
                         >
                             Services
                         </Link>
                     </li>
-                    <li className='pov-navbar__menu-item'>
-                        <Link
-                            activeClass="active"
-                            to="team"
-                            spy={true}
-                            offset={-80}
+                    <li className={router.asPath == "#services" ? "pov-navbar__menu-item active" : "pov-navbar__menu-item"}>
+                        <Link 
+                            href='#team'
                         >
                             Team
                         </Link>

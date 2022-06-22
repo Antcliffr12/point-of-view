@@ -1,8 +1,8 @@
 #pov-header{
-    background: rgba(0, 0, 0, 0.1);
+    //background: rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
     z-index: var(--z-index-header);    
-    top:60px;
+    top:0;
     color:var(--bg-color);
     &.header-scroll{
         top:0;

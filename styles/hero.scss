@@ -10,7 +10,6 @@
 	background-repeat: no-repeat;
 	background-size:cover;
 	position: relative;
-	margin-bottom:-90px;
 	color: #fff;
 	transition: 0.3s;
 
@@ -25,14 +24,15 @@
 	}
 
 	&-content{
-		text-align: center;
+		//text-align: center;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		h2{
+		// align-items: center;
+		h1{
 			font-weight: bold;
 			margin-bottom:30px;
-			font-size:38px;
+			font-size:58px !important;
+			animation-delay: 0.1s;
 			@include media-breakpoint-up(lg){
 				font-size:48px;
 			}
@@ -40,9 +40,67 @@
 		p{
 			width:100%;
 			animation-delay: 0.4s;
+			font-size:20px;
+			margin-bottom: 40px;
+			animation-delay: 0.5s;
 			@include media-breakpoint-up(lg){
-				width: 60%;
+				width: 100%;
 			}
+		}
+
+		&__btn{
+			z-index: 10;
+			cursor: pointer;
+			position: relative;
+			display: flex;
+			animation-delay: .9s;
+			.hero-btn{
+				font-size: 1rem;
+				padding:20px 28px;
+				letter-spacing: .15rem;
+				transition: all .3s;
+				position: relative;
+				overflow: hidden;
+				z-index: 1;
+				border:1px solid #607a85;
+				background-color: #607a85;
+				text-transform: uppercase;		
+				border-radius: 0;	
+				color: #fff;
+				outline: 0;
+				font-weight:500;
+
+				&:after{
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: #607a85;
+					z-index: -2;
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 0%;
+					height: 100%;
+					background-color: darken(#607a85, 15%);
+					transition: all .3s;
+					z-index: -1;
+				}
+
+				&:hover {
+					color: #fff;
+					&:before {
+						width: 100%;
+					}
+				}
+			}
+		
 		}
 	}
 

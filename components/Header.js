@@ -18,7 +18,6 @@ function Header() {
 
   return (
       <>
-         <TopBar />
         <header id="pov-header" className={`fixed-top d-flex align-items-center ${headerToTopScroll ? '' : 'header-scroll'}`}>
             <Navigation toggleNav={toggleNav} />
             <MobileMenu isOpen={isOpen} toggleNav={toggleNav} />

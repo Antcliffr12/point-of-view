@@ -76,3 +76,52 @@ section{
 
 
 
+/* .btn{
+  background: #ff2143;
+    padding: 27px 44px;
+    text-transform: uppercase;
+    font-family: "Roboto",sans-serif;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14 px;
+    border-radius: 0;
+    -moz-user-select: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: color .4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+    
+}
+
+.btn:hover::before{
+  transform: scaleX(1) !important;
+  color: #000000!important;
+  z-index: -1 !important;
+}
+
+.btn::before{
+  content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    background: #fff;
+    color: #fff!important;
+    z-index: 1;
+    transition: transform .5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(.5,1.6,.4,.7);
+    transform: scaleX(0);
+    border-radius: 0;
+} */
